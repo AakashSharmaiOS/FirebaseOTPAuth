@@ -3,27 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		045A4955259A099100252DC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A4954259A099100252DC3 /* AppDelegate.swift */; };
-		045A4957259A099100252DC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A4956259A099100252DC3 /* SceneDelegate.swift */; };
 		045A4959259A099100252DC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A4958259A099100252DC3 /* ViewController.swift */; };
 		045A495C259A099100252DC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045A495A259A099100252DC3 /* Main.storyboard */; };
 		045A495E259A099300252DC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045A495D259A099300252DC3 /* Assets.xcassets */; };
 		045A4961259A099300252DC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045A495F259A099300252DC3 /* LaunchScreen.storyboard */; };
+		045A496E259A151500252DC3 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A496D259A151500252DC3 /* AuthViewController.swift */; };
+		048C4583259B0E5D00D28A0D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C4582259B0E5D00D28A0D /* Alert.swift */; };
+		04BB7C4B259B2FA300DF2A49 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB7C4A259B2FA300DF2A49 /* HomeViewController.swift */; };
+		B957891BAC8D81B93A41FC70 /* Pods_FirebaseOTPAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 385719B69641206F609169B9 /* Pods_FirebaseOTPAuth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		045A4951259A099100252DC3 /* FirebaseOTPAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseOTPAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045A4954259A099100252DC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		045A4956259A099100252DC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		045A4958259A099100252DC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		045A495B259A099100252DC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		045A495D259A099300252DC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		045A4960259A099300252DC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		045A4962259A099300252DC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045A496D259A151500252DC3 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		048C4582259B0E5D00D28A0D /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		04BB7C4A259B2FA300DF2A49 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0769B18F9207BB444A84B657 /* Pods-FirebaseOTPAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseOTPAuth.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseOTPAuth/Pods-FirebaseOTPAuth.debug.xcconfig"; sourceTree = "<group>"; };
+		385719B69641206F609169B9 /* Pods_FirebaseOTPAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseOTPAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE9679E20E9ED461BBFBFA16 /* Pods-FirebaseOTPAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseOTPAuth.release.xcconfig"; path = "Target Support Files/Pods-FirebaseOTPAuth/Pods-FirebaseOTPAuth.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B957891BAC8D81B93A41FC70 /* Pods_FirebaseOTPAuth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				045A4953259A099100252DC3 /* FirebaseOTPAuth */,
 				045A4952259A099100252DC3 /* Products */,
+				D3B2C752753C97C1D7B4F6F8 /* Pods */,
+				2059B9A21AF6CBC188FEE771 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +68,65 @@
 			isa = PBXGroup;
 			children = (
 				045A4954259A099100252DC3 /* AppDelegate.swift */,
-				045A4956259A099100252DC3 /* SceneDelegate.swift */,
-				045A4958259A099100252DC3 /* ViewController.swift */,
-				045A495A259A099100252DC3 /* Main.storyboard */,
-				045A495D259A099300252DC3 /* Assets.xcassets */,
-				045A495F259A099300252DC3 /* LaunchScreen.storyboard */,
+				045A496A259A0D5800252DC3 /* Source */,
+				048C4581259AF93F00D28A0D /* SupportingFiles */,
+				045A496C259A0FA700252DC3 /* Assets */,
 				045A4962259A099300252DC3 /* Info.plist */,
 			);
 			path = FirebaseOTPAuth;
+			sourceTree = "<group>";
+		};
+		045A496A259A0D5800252DC3 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				045A496B259A0F6D00252DC3 /* Auth */,
+				045A495A259A099100252DC3 /* Main.storyboard */,
+				045A495F259A099300252DC3 /* LaunchScreen.storyboard */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		045A496B259A0F6D00252DC3 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				045A4958259A099100252DC3 /* ViewController.swift */,
+				045A496D259A151500252DC3 /* AuthViewController.swift */,
+				04BB7C4A259B2FA300DF2A49 /* HomeViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		045A496C259A0FA700252DC3 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				045A495D259A099300252DC3 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		048C4581259AF93F00D28A0D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				048C4582259B0E5D00D28A0D /* Alert.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		2059B9A21AF6CBC188FEE771 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				385719B69641206F609169B9 /* Pods_FirebaseOTPAuth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3B2C752753C97C1D7B4F6F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0769B18F9207BB444A84B657 /* Pods-FirebaseOTPAuth.debug.xcconfig */,
+				FE9679E20E9ED461BBFBFA16 /* Pods-FirebaseOTPAuth.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 045A4965259A099300252DC3 /* Build configuration list for PBXNativeTarget "FirebaseOTPAuth" */;
 			buildPhases = (
+				C0F90FD891A8846464323BB2 /* [CP] Check Pods Manifest.lock */,
 				045A494D259A099100252DC3 /* Sources */,
 				045A494E259A099100252DC3 /* Frameworks */,
 				045A494F259A099100252DC3 /* Resources */,
+				7C72D1F7D6F20DDDCBBE1CC1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +197,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7C72D1F7D6F20DDDCBBE1CC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebaseOTPAuth/Pods-FirebaseOTPAuth-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebaseOTPAuth/Pods-FirebaseOTPAuth-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirebaseOTPAuth/Pods-FirebaseOTPAuth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0F90FD891A8846464323BB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FirebaseOTPAuth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		045A494D259A099100252DC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BB7C4B259B2FA300DF2A49 /* HomeViewController.swift in Sources */,
 				045A4959259A099100252DC3 /* ViewController.swift in Sources */,
+				045A496E259A151500252DC3 /* AuthViewController.swift in Sources */,
+				048C4583259B0E5D00D28A0D /* Alert.swift in Sources */,
 				045A4955259A099100252DC3 /* AppDelegate.swift in Sources */,
-				045A4957259A099100252DC3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +324,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +378,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,37 +390,39 @@
 		};
 		045A4966259A099300252DC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0769B18F9207BB444A84B657 /* Pods-FirebaseOTPAuth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QS3NXHG676;
+				DEVELOPMENT_TEAM = VZL7GVC544;
 				INFOPLIST_FILE = FirebaseOTPAuth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.FirebaseOTPAuth;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demoAuth.firebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		045A4967259A099300252DC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE9679E20E9ED461BBFBFA16 /* Pods-FirebaseOTPAuth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QS3NXHG676;
+				DEVELOPMENT_TEAM = VZL7GVC544;
 				INFOPLIST_FILE = FirebaseOTPAuth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.FirebaseOTPAuth;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demoAuth.firebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
